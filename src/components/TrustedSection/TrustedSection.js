@@ -1,7 +1,8 @@
 const TrustedSection = () => {
   return (
     <div>
-      <div className="w-full h-auto py-2 px-[14px]">
+      <div className="w-full h-auto py-2 px-[14px] relative pointer-events-none">
+        {" "}
         <p className="text-[22px] text-center font-normal mb-4 text-[#EEE5FF]">
           Trusted by thousands of users around the world
         </p>

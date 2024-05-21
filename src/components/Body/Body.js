@@ -8,8 +8,8 @@ import PluginSection from "../PluginSection/PluginSection";
 import Footer from "../Footer/Footer";
 const Body = () => {
   return (
-    <div>
-      <div className="w-full h-auto bg-[#0e0f1b] backdrop-blur-sm ">
+    <div className="w-full h-auto">
+      <div className="max-w-[1280px] mx-auto">
         <Navbar />
         <HeroSection />
         <TrustedSection />
@@ -17,8 +17,8 @@ const Body = () => {
         <ApplySection />
         <BrowsersSection />
         <PluginSection />
-        <Footer />
       </div>
+      <Footer />
     </div>
   );
 };
