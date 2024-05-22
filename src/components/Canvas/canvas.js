@@ -1,14 +1,11 @@
 import "../../index.css";
 import Main from "../Main/Main";
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 
 const CanvasComponent = () => {
-  const [canvasLoaded, setCanvasLoaded] = useState(false);
-
   useEffect(() => {
     const canvas = document.getElementsByTagName("canvas")[0];
     if (canvas) {
-      setCanvasLoaded(true);
       canvas.width = canvas.clientWidth;
       canvas.height = canvas.clientHeight;
 
@@ -911,7 +908,7 @@ const CanvasComponent = () => {
   return (
     <>
       <canvas></canvas>
-      {canvasLoaded && <Main />}
+      <Main />
     </>
   );
 };
